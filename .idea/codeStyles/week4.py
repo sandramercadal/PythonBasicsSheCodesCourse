@@ -68,17 +68,29 @@ print(students["Alice"])
 #4) Add another country and print
 #5) Display the capital of each country (one at a time, don't use a loop)
 
-countries = {"Spain": "Madrid", "Australia": "Canberra", "Portugal": "Lison"}
+#1)
+countries = {
+    "Spain": "Madrid",
+    "Australia": "Canberra",
+    "Portugal": "Lison"}
+#2)
 print(countries)
-
-countries.popitem() #removes the last item in the dictionary so Portugal is gone
+#3)
+countries.pop("Australia")
 print(countries)
+#countries.popitem() #removes the last item in the dictionary so Portugal is gone
+#print(countries)
 
-countries.update({"Germany": "Berlin"}) #adds Germany and Berlin to the dictionary
+#4) adding Tokyo as a new country
+countries["Japan"] = "Tokyo"
+#countries.update({"Germany": "Berlin"}) #adds Germany and Berlin to the dictionary
 print(countries)
 
 #display the capital of each country (one at a time, don't use a loop)
-countries.get("Spain")
-countries.get("Australia")
-countries.get("Germany")
-print(countries)
+#countries.get("Spain")
+#etc
+#print(countries)
+
+print("The capital of Spain is " + countries["Spain"])
+print("The capital of Japan is " + countries["Japan"])
+print("The capital of Portugal is " + countries["Portugal"])
